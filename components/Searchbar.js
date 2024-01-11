@@ -1,29 +1,31 @@
 import React from "react";
-const {useState} = React;
+const { useState } = React;
 
-const Searchbar = () => {
-    const [search, setSearch] = useState('');
+const Searchbar = (props) => {
+  const { onSearch } = props;
+  const [search, setSearch] = useState("");
 
-    const onChange = (evt) =>{
-        setSearch(evt.target.value);
+  const onChange = (e) => {
+    setSearch(e.target.value);
+    if (e.target.value.length === 0) {
+      onSearch(null);
     }
+  };
 
-    const onClick = (e) => {
-        console.log('Apretando boton')
-    }
+  const onClick = async (e) => {
+    onSearch(search);
+  };
 
-    return (
-    <div>
-        <div>
-            <input placheholder="Buscar pokemon"
-            onChange = {onChange}
-            />
-        </div>
-        <div>
-            <button onClick={onclick}>Buscar</button>
-        </div>
+  return (
+    <div className="searchbar-container">
+      <div className="searchbar">
+        <input placeholder="Buscar pokemon..." onChange={onChange} />
+      </div>
+      <div className="searchbar-btn">
+        <button onClick={onClick}>Buscar</button>
+      </div>
     </div>
-    );
+  );
 };
 
 export default Searchbar;
