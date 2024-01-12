@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={imgUrl} alt="pokeapi-logo" className="navbar-image" />
       </div>
       {/* // eslint-disable-next-line */}
-      <div><span>&#10084</span><span>;&#65039;</span> {favoritePokemons.length}</div>
+      <div><span>&#10084;&#65039;</span> {favoritePokemons.length}</div>
     </nav>
   );
 };
