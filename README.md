@@ -6,7 +6,6 @@ Welcome to the React PokeAPI Starter Project! This project is designed to help y
 [![React version](https://img.shields.io/badge/React-17.0.2-blue.svg)](https://reactjs.org/)
 [![PokeAPI version](https://img.shields.io/badge/PokeAPI-v2-red.svg)](https://pokeapi.co/docs/v2)
 [![Build Status](https://img.shields.io/travis/your-username/react-pokeapi-starter/main.svg)](https://travis-ci.org/your-username/react-pokeapi-starter)
-[![Coverage Status](https://coveralls.io/repos/github/your-username/react-pokeapi-starter/badge.svg)](https://coveralls.io/github/your-username/react-pokeapi-starter)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b3430cbd-3a98-4220-aeae-822214deb757/deploy-status)](https://app.netlify.com/sites/apipokedexreact/deploys)
 
 ## Prerequisites 🛠️
