@@ -45,7 +45,7 @@ Once you've set up the project, it's time to run the application.
 3. Error Handling: Handle errors gracefully when fetching data from the PokeAPI.
 
 ## Resources 📚
-PokeAPI Documentation
-React Documentation
+[PokeAPI Documentation](https://pokeapi.co/)
+[React Documentation](https://react.dev/)
 
 Happy coding! If you have any questions, feel free to reach out or explore the React and PokeAPI communities for support. 🚀👾
