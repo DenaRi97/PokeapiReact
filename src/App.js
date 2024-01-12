@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
-import Navbar from "../components/Navbar";
-import Searchbar from "../components/Searchbar";
-import Pokedex from "../components/Pokedex";
-import { getPokemonData, getPokemons, searchPokemon } from "../api";
-import { FavoriteProvider } from "../contexts/favoritesContext";
-import Footer from "../components/Footer";
+import Navbar from "./components/Navbar";
+import Searchbar from "./components/Searchbar";
+import Pokedex from "./components/Pokedex";
+import { getPokemonData, getPokemons, searchPokemon } from "./api";
+import { FavoriteProvider } from "./contexts/favoritesContext";
+import Footer from "./components/Footer";
 
 const { useState, useEffect } = React;
 
@@ -49,6 +49,7 @@ export default function App() {
     if (!searching) {
       fetchPokemons();
     }
+    // eslint-disable-next-line
   }, [page]);
 
   const updateFavoritePokemons = (name) => {
@@ -97,7 +98,7 @@ export default function App() {
           <Searchbar onSearch={onSearch} />
           {notFound ? (
             <div className="not-found-text">
-              No se encontro el Pokemon que buscabas 😭
+              No se encontro el Pokemon que buscabas 
             </div>
           ) : (
             <Pokedex
